@@ -1,0 +1,274 @@
+/* General Container */
+/* .international{
+  margin-top: 2940px;
+} */
+.international-container {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px 80px;
+  border-radius: 16px;
+  text-align: center;
+  color: #fff;
+  backdrop-filter: blur(5px);
+  animation: slideUp 1.8s ease-out;
+}
+
+.hero-overlay h1 {
+  font-size: 3.8rem;
+  margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1.5px;
+}
+
+.hero-overlay p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Warden Section */
+.warden-section {
+  width: 90%;
+  margin: 80px auto;
+  padding: 50px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.warden-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.warden-image {
+  width: 200px; /* Circle size */
+  height: 200px; /* Keep the height equal to width for a perfect circle */
+  object-fit: cover;
+  border-radius: 50%; /* Make the image circular */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.warden-image:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.warden-description {
+  max-width: 600px;
+  text-align: left;
+}
+
+.warden-description h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.warden-description p {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.warden-details {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the details below the image */
+}
+
+.warden-details p {
+  margin: 8px 0;
+}
+
+.warden-details a {
+  color: #5e60ce;
+  text-decoration: none;
+}
+
+.warden-details a:hover {
+  text-decoration: underline;
+}
+
+.staff-button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background-color: #5e60ce;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.staff-button:hover {
+  background-color: #4a4bb1;
+}
+
+.staff-button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background-color: #5e60ce;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.staff-button:hover {
+  background-color: #4a4bb1;
+}
+
+/* About Section */
+.about-section {
+  padding: 80px 10%;
+  background-color: #f0f8ff;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.about-section h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #004d7a;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  margin-right: 150px;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 60px 10%;
+  background-color: #004d7a;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2.4rem;
+  }
+  .hero-overlay p {
+    font-size: 1.1rem;
+  }
+  .about-section,
+  .facilities-section,
+  .contact-section {
+    padding: 50px 5%;
+  }
+}
+
+/* Additional Blocks Section */
+.additional-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  margin: 20px 0;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.additional-block-left {
+  flex: 1;
+  margin-right: 40px; /* Increased gap between photo and content */
+}
+
+.additional-block-right {
+  flex: 1;
+  text-align: left;
+}
+
+.additional-block-left img,
+.additional-block-right img {
+  max-width: 100%;
+  height: 500px;
+  width: 500px;
+  border-radius: 15px; /* Changed shape to rounded corners */
+}
+
+.additional-block-left h3 {
+  font-size: 2.5rem; /* Increased font size */
+  margin-bottom: 15px;
+  font-family: "Lora", serif; /* Updated font style */
+  color: #333; /* Updated font color */
+}
+
+.additional-block-left p {
+  font-size: 1.4rem; /* Increased font size */
+  color: #555;
+  line-height: 1.9;
+  margin-left: 40px; /* Left margin for spacing */
+}
+
+/* Reverse the order for the image and description */
+.additional-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.additional-img {
+  border-radius: 15px; /* Rounded corners for images */
+}

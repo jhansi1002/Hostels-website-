@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.boys-staff{
+    margin-top: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #5e60ce;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.back{
+    width: 100px;
+}
+
+button:hover {
+    background-color: #4a4bb1;
+}
+
+/* Section Blocks */
+section {
+    margin: 40px 0; /* Adds space between sections */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Chief Warden Section */
+.chief-warden-section {
+    text-align: center;
+    margin-left: 100px;
+}
+
+.warden-details img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.warden-details p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+}
+
+.warden-details a {
+    color: #5e60ce;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.warden-details a:hover {
+    color: #4a4bb1;
+    text-decoration: underline;
+}
+
+/* Leads Section */
+.leads-section {
+    margin: 40px 0;
+    text-align: center;
+    width: 80vw;
+    margin-left: 100px;
+}
+
+.leads-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 30px; /* Gap between the leads */
+    padding: 10px;
+}
+
+.lead {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 4rem;
+}
+
+.lead img {
+    width: 180px; /* Increased image size */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.lead-details p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Caretakers Section */
+.caretakers-section {
+    margin: 40px 0;
+    text-align: center;
+    margin-left: 100px;
+    width: 80vw;
+}
+
+.caretakers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 30px; /* Gap between the caretakers */
+    padding: 10px;
+}
+
+.caretaker {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.caretaker img {
+    width: 180px; /* Increased image size */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.caretaker-details p {
+    font-size: 1.1rem;
+    color: #555;
+}

@@ -1,0 +1,271 @@
+/* Base styling for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Styling for the entire page */
+.hostel-page {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    /* margin-top: 6100px; */
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 80vh; /* Adjust height to fit content */
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; /* Prevent any gaps below the image */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+    text-align: center;
+    color: white;
+    padding: 20px;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.8);
+    max-width: 90%;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.back-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* General Section Styling */
+.section {
+    width: 90%;
+    margin: 80px auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about-section {
+    width: 90%;
+    margin: 80px auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: #555;
+}
+
+/* Warden Section */
+.warden-section {
+    width: 90%;
+    margin: 80px auto;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.warden-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.warden-image {
+    width: 200px; /* Circle size */
+    height: 200px; /* Keep the height equal to width for a perfect circle */
+    object-fit: cover;
+    border-radius: 50%; /* Make the image circular */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.warden-image:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.warden-description {
+    max-width: 600px;
+    text-align: left;
+}
+
+.warden-description h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.warden-description p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.warden-details {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the details below the image */
+}
+
+.warden-details p {
+    margin: 8px 0;
+}
+
+.warden-details a {
+    color: #5e60ce;
+    text-decoration: none;
+}
+
+.warden-details a:hover {
+    text-decoration: underline;
+}
+
+.staff-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #5e60ce;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.staff-button:hover {
+    background-color: #4a4bb1;
+}
+
+.staff-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color: #5e60ce;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.staff-button:hover {
+    background-color: #4a4bb1;
+}
+
+/* Hostel Block Section */
+.block-section {
+    width: 90%;
+    margin: 80px auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.block:nth-child(odd) {
+    flex-direction: row;
+}
+
+.block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.block .block-image {
+    flex: 1;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.block-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25%;
+    transition: transform 0.3s ease;
+}
+
+.block-image img:hover {
+    transform: scale(1.1);
+}
+
+.block .block-description {
+    flex: 2;
+    max-width: 600px;
+}
+
+.block-description h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.block-description p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.block-description a {
+    color: #5e60ce;
+    text-decoration: none;
+}
+
+.block-description a:hover {
+    text-decoration: underline;
+}

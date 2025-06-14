@@ -1,0 +1,374 @@
+/* .boys{
+  margin-top: 3340px; 
+} */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+.boys-hostel {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section - Full Page Image */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire screen */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.book-btn {
+  background: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #ff4500;
+}
+
+/* Section Container */
+.section-container {
+  padding: 40px 5%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Chief Warden Section */
+.warden-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 40px; /* Increased space between content and image */
+  background: #f4f4f4;
+  border-radius: 15px;
+  padding: 40px;
+  margin: 30px 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.warden-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Warden Text Content */
+.warden-content {
+  text-align: left;
+  font-size: 16pt;
+  color: #333;
+  padding: 10px;
+}
+
+.warden-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Warden Image Container */
+.warden-img-container {
+  display: flex;
+  flex-direction: column; /* Stack image and details vertically */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Warden Image (Oval Shape) */
+.warden-img {
+  width: 100%;
+  max-width: 300px; /* Increased image size */
+  height: 350px; /* Fixed height for an oval shape */
+  border-radius: 50%; /* Makes it an oval */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.warden-img:hover {
+  transform: scale(1.08); /* Enlarge slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Warden Details (Below Image) */
+.warden-details {
+  margin-top: 20px;
+  font-size: 14pt;
+  line-height: 1.6;
+  color: #444;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .warden-card {
+    grid-template-columns: 1fr; /* Switch to single column */
+    text-align: center;
+    padding: 30px;
+  }
+
+  .warden-content {
+    text-align: left;
+  }
+
+  .warden-img {
+    max-width: 250px; /* Slightly smaller on tablets */
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .warden-card {
+    padding: 20px;
+  }
+
+  .warden-img {
+    max-width: 220px; /* Adjusted size for smaller screens */
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .warden-img {
+    max-width: 180px; /* Smaller size for mobile screens */
+    height: 230px;
+  }
+
+  .warden-details {
+    font-size: 12pt;
+  }
+}
+
+/* Facilities Section */
+.facilities-section {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.facilities-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Facilities Grid */
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
+  gap: 30px; /* More space between grid items */
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Facility Item */
+.facility-item {
+  background: rgba(20, 20, 20, 0.705); /* Gradient background */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(40, 38, 38, 0.351);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+}
+
+.facility-item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.facility-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.facility-description {
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .facilities-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 column on small screens */
+  }
+}
+
+/* Blocks Section with animations */
+.blocks-section {
+  margin-top: 40px;
+}
+
+.blocks-title {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.block-card {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 20px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.block-card:hover {
+  transform: translateY(-5px);
+}
+
+.block-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.block-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.block-img.slide-in {
+  animation-name: slideInLeft;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.block-info {
+  text-align: left;
+  font-size: 15pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.block-description {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.block-warden {
+  margin-top: auto;
+  background: #d0d0d0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .warden-card,
+  .block-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .warden-img-container {
+    margin-bottom: 20px;
+  }
+  
+  .block-img-container {
+    margin-bottom: 15px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .book-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+  
+  .facilities-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+  
+  .section-container {
+    padding: 20px 15px;
+  }
+  
+  .facility-item {
+    min-height: 80px;
+  }
+  
+  .facility-description {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}

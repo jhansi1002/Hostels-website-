@@ -1,0 +1,159 @@
+/* General Styling */
+.payment {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 250vh; /* Increases overall height of the page */
+    padding-top: 100px; /* Adds space before the form */
+    background-color: #f4f4f4; /* Keeps background color */
+    width: 100%; /* Ensures full width */
+}
+
+/* Container for the form */
+.payment-container {
+    max-width: 600px;
+    margin: 0 auto; /* Centers the form */
+    margin-top: 130px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Fix for body & root container */
+body, #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px; /* Increased padding */
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #444;
+    padding: 0 10px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px;
+    padding: 5px 10px; /* Added padding inside each field */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select {
+    width: calc(100% - 20px); /* Adjust width to prevent touching edges */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Two-column Row */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adds spacing between the columns */
+}
+
+.form-row .form-group {
+    flex: 1;
+    margin-right: 0;
+}
+
+/* Radio Button Styling */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px; /* Added padding */
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group input {
+    margin-right: 8px;
+}
+
+/* Dropdown Styling */
+.select-year {
+    margin-top: 10px;
+}
+
+/* Error Messages */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px; /* Added padding */
+}
+
+.checkbox-group input {
+    margin-right: 8px;
+}
+
+/* Pay Button */
+.pay-button {
+    width: 100%;
+    background: #007bff;
+    color: #fff;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.pay-button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+.Note{
+    color: red;
+    font-size: 1.2rem;
+}
